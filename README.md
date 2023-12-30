@@ -11,8 +11,8 @@ The contents of this repository provide rigged
 
 More precisely, the models are rigged skeletons that emulate the appearance of
 the skeleton models that OpenPose infers from photographs. The intention is to 
-provide a poseable 3D model that can be used as input to systems such as 
-[Stable Diffusion](https://github.com/Stability-AI/StableDiffusion).
+provide a poseable 3D model that can be used to produce images that can be used
+as input to systems such as [Stable Diffusion](https://github.com/Stability-AI/StableDiffusion).
 
 ## Usage
 
@@ -34,11 +34,11 @@ Render the image and use the resulting image as input to the
 
 ## Models
 
-| File                           | Description               |
-|--------------------------------|---------------------------|
-| [Body25.blend](Body25.blend)   | The OpenPose Body25 model |
-| [Hand.blend](Hand.blend)       | An OpenPose hand model    |
-| [Example.blend](Example.blend) | An example scene          |
+| File                    | Description     |
+|-------------------------|-----------------|
+| [Body25.blend](Body25.blend)| The OpenPose Body25 model|
+| [Hand.blend](Hand.blend)| An OpenPose hand model|
+| [Example.blend](Example.blend)| An example scene|
 
 ## Colors
 
