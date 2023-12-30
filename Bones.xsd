@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:b="urn:com.io7m.visual.openpose_rig:bones:1"
+            targetNamespace="urn:com.io7m.visual.openpose_rig:bones:1">
+
+  <xsd:simpleType name="ColorHex">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9a-f]{6}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="Bone">
+    <xsd:complexType>
+      <xsd:attribute name="Index"
+                     type="xsd:unsignedInt"
+                     use="required">
+        <xsd:annotation>
+          <xsd:documentation>
+            The index of the bone, starting from zero.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:attribute>
+      <xsd:attribute name="Name"
+                     type="xsd:string"
+                     use="required">
+        <xsd:annotation>
+          <xsd:documentation>
+            The name of the bone.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:attribute>
+      <xsd:attribute name="ColorRGB"
+                     type="b:ColorHex"
+                     use="required">
+        <xsd:annotation>
+          <xsd:documentation>
+            The color of the bone as a hexadecimal RGB (e.g. 00ffff for full intensity cyan).
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:attribute>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Bones">
+    <xsd:complexType>
+      <xsd:sequence minOccurs="1"
+                    maxOccurs="unbounded">
+        <xsd:element ref="b:Bone"/>
+      </xsd:sequence>
+
+      <xsd:attribute name="Name"
+                     use="required"
+                     type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>
+            The name of the skeleton.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:key name="BoneIndexKey">
+      <xsd:selector xpath="b:Bone"/>
+      <xsd:field xpath="@Index"/>
+    </xsd:key>
+
+    <xsd:key name="BoneNameKey">
+      <xsd:selector xpath="b:Bone"/>
+      <xsd:field xpath="@Name"/>
+    </xsd:key>
+  </xsd:element>
+
+</xsd:schema>

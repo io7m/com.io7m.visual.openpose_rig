@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<b:Bones xmlns:b="urn:com.io7m.visual.openpose_rig:bones:1"
+         Name="Body25">
+
+  <!--
+    Colors taken from:
+    https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/1f1aa9c59fe59c90cca685b724f4f97f76137224/include/openpose/pose/poseParametersRender.hpp
+  -->
+
+  <b:Bone Index="0"
+          Name="Nose"
+          ColorRGB="ff0055"/>
+  <b:Bone Index="1"
+          Name="Neck"
+          ColorRGB="ff0000"/>
+  <b:Bone Index="2"
+          Name="RShoulder"
+          ColorRGB="ff5500"/>
+  <b:Bone Index="3"
+          Name="RElbow"
+          ColorRGB="ffaa00"/>
+  <b:Bone Index="4"
+          Name="RWrist"
+          ColorRGB="ffff00"/>
+  <b:Bone Index="5"
+          Name="LShoulder"
+          ColorRGB="aaff00"/>
+  <b:Bone Index="6"
+          Name="LElbow"
+          ColorRGB="55ff00"/>
+  <b:Bone Index="7"
+          Name="LWrist"
+          ColorRGB="00ff00"/>
+  <b:Bone Index="8"
+          Name="MidHip"
+          ColorRGB="ff0000"/>
+  <b:Bone Index="9"
+          Name="RHip"
+          ColorRGB="00ff55"/>
+  <b:Bone Index="10"
+          Name="RKnee"
+          ColorRGB="00ffaa"/>
+  <b:Bone Index="11"
+          Name="RAnkle"
+          ColorRGB="00ffff"/>
+  <b:Bone Index="12"
+          Name="LHip"
+          ColorRGB="00aaff"/>
+  <b:Bone Index="13"
+          Name="LKnee"
+          ColorRGB="0055ff"/>
+  <b:Bone Index="14"
+          Name="LAnkle"
+          ColorRGB="0000ff"/>
+  <b:Bone Index="15"
+          Name="REye"
+          ColorRGB="ff00aa"/>
+  <b:Bone Index="16"
+          Name="LEye"
+          ColorRGB="aa00ff"/>
+  <b:Bone Index="17"
+          Name="REar"
+          ColorRGB="ff00ff"/>
+  <b:Bone Index="18"
+          Name="LEar"
+          ColorRGB="5500ff"/>
+  <b:Bone Index="19"
+          Name="LBigToe"
+          ColorRGB="0000ff"/>
+  <b:Bone Index="20"
+          Name="LSmallToe"
+          ColorRGB="0000ff"/>
+  <b:Bone Index="21"
+          Name="LHeel"
+          ColorRGB="0000ff"/>
+  <b:Bone Index="22"
+          Name="RBigToe"
+          ColorRGB="00ffff"/>
+  <b:Bone Index="23"
+          Name="RSmallToe"
+          ColorRGB="00ffff"/>
+  <b:Bone Index="24"
+          Name="RHeel"
+          ColorRGB="00ffff"/>
+</b:Bones>
