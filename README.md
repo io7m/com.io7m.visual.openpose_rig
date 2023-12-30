@@ -1,7 +1,7 @@
 com.io7m.visual.openpose_rig
 ===
 
-![Example](./ExampleEdit.jpg)
+![com.io7m.visual.openpose_rig.jpg](./com.io7m.visual.openpose_rig.jpg)
 
 ## Description
 
@@ -13,6 +13,8 @@ More precisely, the models are rigged skeletons that emulate the appearance of
 the skeleton models that OpenPose infers from photographs. The intention is to 
 provide a poseable 3D model that can be used to produce images that can be used
 as input to systems such as [Stable Diffusion](https://github.com/Stability-AI/StableDiffusion).
+
+![Example](./ExampleEdit.jpg)
 
 ## Usage
 
